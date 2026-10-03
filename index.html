@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- next2great-legal 에서 생성한 문서입니다. 직접 고치지 말고 apps/moneylog/policy.md 를 고친 뒤 다시 생성하세요. -->
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
@@ -7,188 +8,144 @@
 <style>
   :root {
     color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #1c1b1f;
+    --muted: #5f5e62;
+    --rule: #e2e0e4;
     --accent: #b4ec3f;
-    --text: #1f2430;
-    --muted: #6b7280;
-    --heading: #14181f;
-    --border: #d1d5db;
-    --soft: #f7f8fa;
-  }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans KR", sans-serif;
-    max-width: 820px;
-    margin: 0 auto;
-    padding: 28px 20px 72px;
-    line-height: 1.75;
-    color: var(--text);
-    background: #ffffff;
-    word-break: keep-all;
-  }
-  h1 {
-    font-size: 1.75rem;
-    line-height: 1.25;
-    border-bottom: 3px solid var(--accent);
-    padding-bottom: 12px;
-    margin-bottom: 8px;
-  }
-  h2 {
-    font-size: 1.15rem;
-    margin-top: 34px;
-    color: var(--heading);
-  }
-  p { margin: 10px 0; }
-  ul { padding-left: 22px; }
-  li { margin: 5px 0; }
-  a { color: #2563eb; }
-  code {
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
-    background: var(--soft);
-    border: 1px solid var(--border);
-    border-radius: 4px;
-    padding: 1px 5px;
-    font-size: 0.92em;
-  }
-  .effective {
-    color: var(--muted);
-    font-size: 0.92rem;
-    margin-bottom: 24px;
-  }
-  .summary {
-    background: var(--soft);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 14px 16px;
-    margin: 18px 0 28px;
-  }
-  .footer {
-    margin-top: 44px;
-    padding-top: 18px;
-    border-top: 1px solid var(--border);
-    color: var(--muted);
-    font-size: 0.88rem;
   }
   @media (prefers-color-scheme: dark) {
     :root {
-      --text: #d6dae2;
-      --muted: #9aa3ad;
-      --heading: #f2f4f8;
-      --border: #3a4150;
-      --soft: #1b2028;
+      --bg: #141218;
+      --fg: #e6e1e6;
+      --muted: #a9a5ab;
+      --rule: #3a383e;
+      --accent: #b4ec3f;
     }
-    body { background: #14181f; }
-    a { color: #8ab4ff; }
   }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo",
+      "Noto Sans KR", "Malgun Gothic", sans-serif;
+    line-height: 1.7;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 24px 96px; }
+  h1 { font-size: 1.6rem; margin: 0 0 4px; }
+  .effective-date { color: var(--muted); font-size: 0.95rem; margin: 0 0 32px; }
+  h2 { font-size: 1.15rem; margin: 40px 0 12px; padding-bottom: 8px; border-bottom: 1px solid var(--rule); }
+  h3 { font-size: 1.02rem; margin: 28px 0 8px; }
+  p, li { font-size: 1rem; }
+  ul, ol { padding-left: 1.3em; }
+  li + li { margin-top: 6px; }
+  a { color: var(--accent); }
+  code { font-size: 0.92em; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 0.95rem; }
+  th, td { border: 1px solid var(--rule); padding: 6px 10px; text-align: left; vertical-align: top; }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 0.85rem; }
 </style>
 </head>
 <body>
-<h1>돈기록장 개인정보처리방침</h1>
-<p class="effective">최종 수정일: 2026년 8월 16일</p>
+<main>
+  <h1>돈기록장 개인정보처리방침</h1>
+  <p class="effective-date">최종 수정일: 2026년 10월 4일</p>
 
-<div class="summary">
-  <p><strong>돈기록장 - 가계부·구독·경조사 관리</strong> (패키지명: <code>com.next2great.moneylog</code>, 이하 "앱")은 사용자의 개인정보와 가계부 데이터를 안전하게 관리하기 위해 아래와 같이 개인정보 처리방침을 안내합니다.</p>
-</div>
-
+<p><strong>돈기록장 - 가계부·구독·경조사 관리</strong> (패키지명: <code>com.next2great.moneylog</code>, 이하 "앱")은 사용자의 개인정보와 가계부 데이터를 안전하게 관리하기 위해 아래와 같이 개인정보 처리방침을 안내합니다.</p>
 <h2>1. 기본 원칙</h2>
 <p>앱은 사용자가 직접 입력한 지출, 예산, 구독/반복지출, 경조사 기록을 기기 내부에 저장하는 로컬 중심 앱입니다.</p>
 <p>개발자는 사용자의 가계부 데이터를 개발자 서버로 수집하거나 전송하지 않으며, 외부 AI 서비스로 분석하지 않습니다. 자연어 입력 분석과 키워드 기반 카테고리 분류는 기기 안에서 처리됩니다.</p>
 <p>앱에는 광고 표시를 위한 Google AdMob(Google Mobile Ads SDK)이 포함되어 있습니다. 광고 SDK는 광고 표시, 부정 이용 방지, 빈도 관리, 진단 등을 위해 별도의 광고 관련 데이터를 처리할 수 있습니다. 사용자가 입력한 가계부 데이터는 광고 SDK로 전달하지 않습니다.</p>
-
 <h2>2. 앱이 저장하는 데이터</h2>
 <p>앱은 기능 제공을 위해 다음 데이터를 기기 내부 Room DB 또는 DataStore에 저장합니다.</p>
 <ul>
-  <li>지출 기록: 날짜, 항목명, 금액, 카테고리, 결제수단(기능 활성화 시), 태그, 백업 여부</li>
-  <li>게이미피케이션 기록: 활동별 XP 지급 내역, 현재 누적 XP, 획득 배지, 연속 기록 활동일, 구독 정리로 계산한 월·연 절약 예상액</li>
-  <li>예산 정보: 월별 예산, 예산 기준일, 월별 예산 이력</li>
-  <li>카테고리 및 퀵 등록 설정</li>
-  <li>키워드 자동 분류 규칙</li>
-  <li>구독/반복지출 기록: 서비스명, 금액, 결제 주기, 결제일, 해지 예약일, 상태, 메모, 알림 설정, 마지막 지출 등록일</li>
-  <li>경조사 기록: 보냄/받음 구분, 경조사명, 경조사 유형, 성명, 관계, 금액, 일자, 참석 여부, 메모, 답례 메모, 알림 설정</li>
-  <li>화면 테마, 요약 카드 표시 여부, 결제수단 사용 여부와 사용자 설정 항목, 구독·경조사 공통 알림 시간 등 앱 설정</li>
+<li>지출 기록: 날짜, 항목명, 금액, 카테고리, 결제수단(기능 활성화 시), 태그, 백업 여부</li>
+<li>게이미피케이션 기록: 활동별 XP 지급 내역, 현재 누적 XP, 획득 배지, 연속 기록 활동일, 구독 정리로 계산한 월·연 절약 예상액</li>
+<li>예산 정보: 월별 예산, 예산 기준일, 월별 예산 이력</li>
+<li>카테고리 및 퀵 등록 설정</li>
+<li>키워드 자동 분류 규칙</li>
+<li>구독/반복지출 기록: 서비스명, 금액, 결제 주기, 결제일, 해지 예약일, 상태, 메모, 알림 설정, 마지막 지출 등록일</li>
+<li>경조사 기록: 보냄/받음 구분, 경조사명, 경조사 유형, 성명, 관계, 금액, 일자, 참석 여부, 메모, 답례 메모, 알림 설정</li>
+<li>화면 테마, 요약 카드 표시 여부, 결제수단 사용 여부와 사용자 설정 항목, 구독·경조사 공통 알림 시간 등 앱 설정</li>
 </ul>
 <p>위 데이터는 사용자의 기기 내부에 저장되며, 개발자 서버로 자동 전송되지 않습니다.</p>
-
 <h2>3. 개발자가 직접 수집하지 않는 정보</h2>
 <p>앱은 다음 정보를 개발자가 직접 수집하지 않습니다.</p>
 <ul>
-  <li>계정 정보</li>
-  <li>이름, 전화번호, 이메일 주소 등 회원 가입 정보</li>
-  <li>위치 정보</li>
-  <li>연락처</li>
-  <li>사진, 동영상, 파일 전체 접근 권한</li>
-  <li>금융기관 로그인 정보</li>
-  <li>SMS 또는 금융/은행 앱 알림 내용</li>
+<li>계정 정보</li>
+<li>이름, 전화번호, 이메일 주소 등 회원 가입 정보</li>
+<li>위치 정보</li>
+<li>연락처</li>
+<li>사진, 동영상, 파일 전체 접근 권한</li>
+<li>금융기관 로그인 정보</li>
+<li>SMS 또는 금융/은행 앱 알림 내용</li>
 </ul>
 <p>앱은 회원 가입 없이 사용할 수 있으며, 사용자의 금융 데이터를 특정 서버 계정에 동기화하지 않습니다.</p>
-
 <h2>4. 광고 및 Google AdMob</h2>
 <p>앱은 대시보드 등에 광고를 표시합니다. EU·영국 등 관련 법령상 동의가 필요한 지역의 사용자에게는 Google 사용자 메시지 플랫폼(UMP)을 통해 동의 절차를 거친 뒤에만 Google Mobile Ads SDK를 초기화하고 광고를 요청합니다.</p>
 <p>광고 표시를 위해 Google AdMob(Google Mobile Ads SDK)이 사용될 수 있으며, Google의 공식 안내에 따르면 Google Mobile Ads SDK는 광고, 분석, 부정 이용 방지 등을 위해 IP 주소, 앱/광고와의 상호작용 정보, 진단 정보, 기기 및 계정 식별자(예: 광고 ID, 앱 세트 ID 등)를 처리할 수 있습니다. 해당 데이터는 Google의 정책에 따라 처리되며 전송 중 암호화될 수 있습니다.</p>
 <p>앱은 사용자가 입력한 지출, 예산, 구독, 경조사 내용을 광고 요청에 포함하여 전송하지 않습니다.</p>
 <p>관련 안내:</p>
 <ul>
-  <li><a href="https://policies.google.com/privacy">Google 개인정보처리방침</a></li>
-  <li><a href="https://support.google.com/admob/answer/6128543">Google AdMob 정책</a></li>
-  <li><a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">Google Mobile Ads SDK 데이터 공개 안내</a></li>
+<li><a href="https://policies.google.com/privacy">Google 개인정보처리방침</a></li>
+<li><a href="https://support.google.com/admob/answer/6128543">Google AdMob 정책</a></li>
+<li><a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">Google Mobile Ads SDK 데이터 공개 안내</a></li>
 </ul>
-
 <h2>5. 보상형 광고 및 24시간 광고 제거</h2>
 <p>앱은 사용자가 선택적으로 광고를 시청하면 24시간 동안 광고를 제거하는 기능을 제공합니다.</p>
 <p>보상형 광고 시청은 사용자의 선택 사항이며, 지출 기록, 예산 확인, 백업/복원 등 핵심 기능 사용을 위해 필수로 요구하지 않습니다.</p>
 <p>보상 지급 확인을 위해 광고 SDK가 광고 로드, 광고 시청 완료 여부, 보상 지급 관련 이벤트를 처리할 수 있습니다. 앱은 광고 제거 만료 시각을 기기 내부 설정에 저장합니다.</p>
-
 <h2>6. 음성 입력</h2>
 <p>앱의 음성 입력은 Android <code>RecognizerIntent</code>를 통해 사용자의 기기에 설치된 시스템 음성 인식 기능에 위임됩니다. 앱 자체는 <code>RECORD_AUDIO</code> 권한을 요청하지 않습니다.</p>
 <p>음성 인식 과정에서 실제 음성 데이터가 어떻게 처리되는지는 사용자의 기기, 시스템 음성 인식 앱, Google 앱 또는 제조사 음성 인식 서비스 설정에 따라 달라질 수 있습니다. 앱은 음성 인식 결과로 반환된 텍스트만 받아 기기 안에서 지출 항목과 금액을 파싱합니다.</p>
-
 <h2>7. 백업, 복원 및 파일 처리</h2>
 <p>사용자는 앱 내 백업 기능을 통해 가계부, 예산 이력, 구독, 경조사 및 게이미피케이션 데이터를 엑셀 호환 CSV 파일로 저장하고 복원할 수 있습니다. 마크다운 백업과 복원은 더 이상 제공하지 않습니다.</p>
 <p>백업과 복원은 Android 저장소 접근 프레임워크(SAF)를 사용합니다. 사용자는 시스템 파일 화면에서 Google Drive 또는 기기 저장소를 직접 선택할 수 있으며, 앱은 사용자가 선택한 CSV 파일 또는 저장 위치에만 접근합니다. 앱은 사용자의 Google 계정에 직접 로그인하거나 Google Drive 전체 파일 목록에 접근하지 않습니다.</p>
 <p>내보낸 파일이 기기 저장소, 클라우드 드라이브, 메신저, 이메일 등에 저장되거나 공유되는 경우 해당 파일의 보관 및 접근 권한 관리는 사용자와 해당 서비스의 정책에 따릅니다.</p>
-
 <h2>8. 알림 및 재부팅 후 알림 복구</h2>
 <p>앱은 구독/반복지출 결제일, 이벤트/혜택 종료일, 해지 예약일, 경조사 예정일에 대한 로컬 알림을 제공할 수 있습니다.</p>
 <p>알림은 기기 내부에서 <code>AlarmManager</code>와 <code>BroadcastReceiver</code>를 사용해 예약됩니다. Android 13 이상에서는 알림 표시를 위해 <code>POST_NOTIFICATIONS</code> 권한을 요청할 수 있습니다.</p>
 <p>기기 재부팅 후 예약된 구독/경조사 알림을 복구하기 위해 <code>RECEIVE_BOOT_COMPLETED</code> 권한을 사용합니다.</p>
-
 <h2>9. 앱 권한</h2>
 <p>앱은 현재 다음 권한을 사용할 수 있습니다.</p>
 <ul>
-  <li><code>INTERNET</code>: 광고 로드 및 광고 SDK 통신</li>
-  <li><code>ACCESS_NETWORK_STATE</code>: 광고 로드 전 네트워크 상태 확인</li>
-  <li><code>POST_NOTIFICATIONS</code>: Android 13 이상에서 구독/경조사 알림 표시</li>
-  <li><code>RECEIVE_BOOT_COMPLETED</code>: 기기 재부팅 후 구독/경조사 알림 재예약</li>
-  <li>광고 ID 관련 권한: Google Mobile Ads SDK 사용에 따라 광고 식별자 처리를 위해 포함될 수 있음</li>
+<li><code>INTERNET</code>: 광고 로드 및 광고 SDK 통신</li>
+<li><code>ACCESS_NETWORK_STATE</code>: 광고 로드 전 네트워크 상태 확인</li>
+<li><code>POST_NOTIFICATIONS</code>: Android 13 이상에서 구독/경조사 알림 표시</li>
+<li><code>RECEIVE_BOOT_COMPLETED</code>: 기기 재부팅 후 구독/경조사 알림 재예약</li>
+<li>광고 ID 관련 권한: Google Mobile Ads SDK 사용에 따라 광고 식별자 처리를 위해 포함될 수 있음</li>
 </ul>
 <p>앱은 저장소 전체 접근 권한, 연락처 권한, 위치 권한, 카메라 권한, 마이크 녹음 권한을 직접 요청하지 않습니다.</p>
-
 <h2>10. 데이터 보관 및 삭제</h2>
 <p>앱 내부 데이터는 사용자가 앱에서 개별 기록을 삭제하거나, 기기의 앱 정보 화면에서 앱 데이터를 삭제하거나, 앱을 삭제할 때까지 기기 내부에 보관됩니다.</p>
 <p>사용자가 만든 백업 파일은 앱 내부 데이터와 별도로 사용자가 선택한 위치에 저장됩니다. 앱을 삭제해도 외부 저장소나 클라우드에 저장한 백업 파일은 자동 삭제되지 않을 수 있습니다.</p>
 <p>광고 SDK가 처리하는 광고 관련 데이터의 보관 및 삭제는 Google의 정책과 사용자의 Google/Android 광고 설정에 따릅니다.</p>
-
 <h2>11. 데이터의 제3자 제공</h2>
 <p>개발자는 사용자가 입력한 가계부, 구독, 경조사 데이터를 제3자에게 판매하거나 제공하지 않습니다.</p>
 <p>단, 광고 제공을 위해 Google AdMob SDK가 광고 관련 데이터를 Google에 전송하거나 처리할 수 있습니다. 이는 사용자가 입력한 가계부 데이터와 분리됩니다.</p>
 <p>법령상 요구가 있거나 수사기관 등 공적 기관의 적법한 요청이 있는 경우에는 관련 법령에 따라 필요한 범위에서 대응할 수 있습니다.</p>
-
 <h2>12. 아동의 개인정보</h2>
 <p>앱은 아동을 주된 대상으로 하지 않으며, 개발자는 아동의 개인정보를 의도적으로 수집하지 않습니다.</p>
 <p>광고가 노출되는 경우 관련 법령 및 광고 플랫폼 정책에 따라 적절한 광고 설정을 적용합니다.</p>
-
 <h2>13. 보안</h2>
 <p>앱은 사용자의 주요 데이터를 기기 내부 저장소에 보관하고, 외부 서버 동기화를 사용하지 않습니다.</p>
 <p>다만 기기 자체가 분실, 탈취, 루팅되거나, 사용자가 백업 파일을 외부에 공유하는 경우에는 데이터가 노출될 수 있습니다. 사용자는 기기 잠금, 백업 파일 보관 위치, 클라우드 공유 권한을 직접 관리해야 합니다.</p>
-
 <h2>14. 개인정보 처리방침 변경</h2>
 <p>본 개인정보 처리방침은 앱 기능 변경, 광고 SDK 설정 변경, 법령 또는 플랫폼 정책 변경에 따라 수정될 수 있습니다.</p>
 <p>중요한 변경이 있는 경우 앱 내 안내, 스토어 설명, 개인정보 처리방침 페이지 업데이트 등을 통해 고지합니다.</p>
-
 <h2>15. 문의</h2>
 <p>개인정보 처리방침 또는 데이터 처리에 대한 문의는 아래 이메일로 연락해 주세요.</p>
 <ul>
-  <li>이메일: <a href="mailto:kjaewon1@gmail.com">kjaewon1@gmail.com</a></li>
+<li>이메일: next2great.dev@gmail.com</li>
 </ul>
 
-<p class="footer">돈기록장 (MoneyLog) · com.next2great.moneylog</p>
+  <footer>
+    돈기록장 (MoneyLog) &middot; <code>com.next2great.moneylog</code> &middot;
+    <a href="https://github.com/kjaewon/moneylog-privacy/blob/main/PRIVACY.md">원문 마크다운 보기</a>
+  </footer>
+</main>
 </body>
 </html>

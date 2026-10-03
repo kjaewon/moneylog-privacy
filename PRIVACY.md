@@ -1,8 +1,7 @@
-# 개인정보 처리방침 (Privacy Policy)
+# 돈기록장 개인정보처리방침
 
+*최종 수정일: 2026년 10월 4일*
 **돈기록장 - 가계부·구독·경조사 관리** (패키지명: `com.next2great.moneylog`, 이하 "앱")은 사용자의 개인정보와 가계부 데이터를 안전하게 관리하기 위해 아래와 같이 개인정보 처리방침을 안내합니다.
-
-*최종 수정일: 2026년 8월 16일*
 
 ## 1. 기본 원칙
 
@@ -51,9 +50,9 @@
 
 관련 안내:
 
-* Google 개인정보처리방침: https://policies.google.com/privacy
-* Google AdMob 정책: https://support.google.com/admob/answer/6128543
-* Google Mobile Ads SDK 데이터 공개 안내: https://developers.google.com/admob/android/privacy/play-data-disclosure
+* [Google 개인정보처리방침](https://policies.google.com/privacy)
+* [Google AdMob 정책](https://support.google.com/admob/answer/6128543)
+* [Google Mobile Ads SDK 데이터 공개 안내](https://developers.google.com/admob/android/privacy/play-data-disclosure)
 
 ## 5. 보상형 광고 및 24시간 광고 제거
 
@@ -135,4 +134,4 @@
 
 개인정보 처리방침 또는 데이터 처리에 대한 문의는 아래 이메일로 연락해 주세요.
 
-* 이메일: kjaewon1@gmail.com
+* 이메일: next2great.dev@gmail.com
